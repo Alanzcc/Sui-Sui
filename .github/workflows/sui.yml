@@ -13,6 +13,6 @@ jobs:
       - name: Check branches
         run: |
           if [ ${{ github.head_ref }} != "dev" ] && [ ${{ github.base_ref }} == "sui" ]; then
-            echo "Merge requests to main branch are only allowed from dev branch."
+            echo "Merge requests to sui branch are only allowed from dev branch."
             exit 1
           fi
